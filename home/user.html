@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Xin chào Admin </h2>
+        <ul>
+            <li><a href="#" id="dashboardLink">Trang chủ</a></li>
+            <li><a href="#" id="productsLink">Sản phẩm</a></li>
+            <li><a href="#" id="ordersLink">Người dùng</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="admin-container">
+        <h2>Người dùng</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Địa chỉ</th>
+                </tr>
+            </thead>
+            <tbody id="usersList">
+                <!-- Product list will be populated here -->
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="../JS/user.js"></script>
+</body>
+
+</html>

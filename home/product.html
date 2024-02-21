@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Xin chào Admin </h2>
+        <ul>
+            <li><a href="#" id="dashboardLink">Trang chủ</a></li>
+            <li><a href="#" id="productsLink">Sản phẩm</a></li>
+            <li><a href="#" id="ordersLink">Người dùng</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="admin-container">
+        <h2>Sản phẩm</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Thông tin</th>
+                    <th>Ảnh</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+                <!-- Product list will be populated here -->
+            </tbody>
+        </table>
+        <div id="productForm">
+            <h3>Add New Product</h3>
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="number" id="productPrice" placeholder="Product Price" required>
+            <textarea id="productDescription" placeholder="Product Description" required></textarea>
+            <input type="file" id="productImage" accept="image/*" required>
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+
+
+    <script src="../JS/product.js"></script>
+</body>
+
+</html>
